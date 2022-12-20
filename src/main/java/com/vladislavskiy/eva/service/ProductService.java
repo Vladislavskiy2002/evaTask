@@ -6,5 +6,5 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 public interface ProductService {
-    List<Product> findAllProductsByRegName(String reg);
+    List<Product> findAllProductsByRegName(final String reg);
 }

@@ -18,7 +18,7 @@ public class ProductServiceImpl implements ProductService {
         this.productRepository = productRepository;
     }
 
-    public List<Product> findAllProductsByRegName(String reg)
+    public List<Product> findAllProductsByRegName(final String reg)
     {
         return productRepository.findAll().stream().filter(person->(!person.getName().matches(reg))).toList();
     }
