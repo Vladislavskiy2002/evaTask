@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 @RestController
 @Slf4j
-@RequestMapping("/api")
+@RequestMapping("/shop")
 public class ProductController {
     private ProductService productService;
 
